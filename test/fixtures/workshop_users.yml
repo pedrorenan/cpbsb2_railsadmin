@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  workshop: one
+  user: one
+  kind: 1
+
+two:
+  workshop: two
+  user: two
+  kind: 1
