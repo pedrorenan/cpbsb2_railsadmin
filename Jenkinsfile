@@ -2,7 +2,7 @@ pipeline {
   agent {
     docker {
       image 'ruby:2.5.1'
-      args '-p 3000 3000'
+      args '-p 3000:3000'
     }
 
   }
