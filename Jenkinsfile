@@ -11,5 +11,15 @@ pipeline {
         sh 'bundle'
       }
     }
+    stage('provisionar') {
+      steps {
+        sh 'rake db:create db:migrate db:seed'
+      }
+    }
+    stage('rodar') {
+      steps {
+        sh 'rails s'
+      }
+    }
   }
 }
