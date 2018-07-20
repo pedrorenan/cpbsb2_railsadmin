@@ -13,7 +13,7 @@ pipeline {
     }
     stage('provisionar') {
       steps {
-        sh 'rake db:create db:migrate db:seed'
+        sh 'bundle exec rake db:create db:migrate db:seed'
       }
     }
     stage('rodar') {
